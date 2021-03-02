@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PersonalGreeter</string>
+    <string name="str_name_request">Ваше имя?</string>
+    <string name="s_presshere">Нажмите сюда</string>
+</resources>
