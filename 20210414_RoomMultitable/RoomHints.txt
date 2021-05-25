@@ -1,0 +1,19 @@
+Использование Room
+~~~~~~~~~~~~~~~~~~
+1). build.gradle
+plugins {
+    ...
+    id 'kotlin-kapt'
+}
+
+implementation 'androidx.room:room-runtime:2.2.5'
+kapt 'androidx.room:room-compiler:2.2.5'
+annotationProcessor 'androidx.room:room-compiler:2.2.5'
+
+2).AppDatabase.kt
+@Database(entities = [User::class],version = 2)
+abstract class AppDatabase: RoomDatabase() {
+    abstract fun userDao():UserDao
+}
+
+
