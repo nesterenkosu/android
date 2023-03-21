@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity() {
 
         btn_web.setOnClickListener {
 
-            val webpage: Uri = Uri.parse("https://inf.susu.ac.ru/")
+            val webpage: Uri = Uri.parse("https://digital-economy.susu.ru/")
             val intent = Intent(Intent.ACTION_VIEW, webpage)
             if (intent.resolveActivity(packageManager) != null) {
                 startActivity(intent)
